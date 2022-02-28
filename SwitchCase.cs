@@ -8,25 +8,21 @@ namespace EmployeeWageProblemOOPS
 {
     public class SwitchCase
     {
-        public static void switchCase(int number, int wagePerHour, int fullDayHour, int partTimeHour)
+        public static int switchCase(int number, int wagePerHour, int fullDayHour, int partTimeHour)
         {
             int moneyEarned;
             switch (number)
             {
                 case 0:
-                    Console.WriteLine("The employee is Absent, hence earned nothing.");
-                    break;
+                    return 0;
                 case 1:
                     moneyEarned = wagePerHour * partTimeHour;
-                    Console.WriteLine("The employee earned " + moneyEarned + " throughout the day.");
-                    break;
+                    return moneyEarned;
                 case 2:
                     moneyEarned = wagePerHour * fullDayHour;
-                    Console.WriteLine("The employee earned " + moneyEarned + " throughout the day.");
-                    break;
+                    return moneyEarned;
                 default:
-                    Console.WriteLine("Out of context.");
-                    break;
+                    return 0;
             }
         }
     }
