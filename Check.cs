@@ -8,18 +8,18 @@ namespace EmployeeWageProblemOOPS
 {
     public class Check
     {
-        public static void checkPresentAbsent()
+        public static bool checkPresentAbsent()
         {
             int isPresent = 1;
             Random random = new Random();
             int check = random.Next(0, 2);
             if (check == isPresent)
             {
-                Console.WriteLine("Employee is presnt.");
+                return true;
             }
             else
             {
-                Console.WriteLine("Employee is absent.");
+                return false;
             }
         }
     }
