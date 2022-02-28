@@ -8,13 +8,14 @@ namespace EmployeeWageProblemOOPS
 {
     public class DailyWageComputation
     {
-        public static void CalculateDailyWage()
+        public void CalculateDailyWage()
         {
             int wagePerHour = 20;
             int fullDayHour = 8;
             int partTimeHour = 4;
             int workDayPerMonth = 20;
-            MonthlyWage.CalculateMonthlyWage(workDayPerMonth, wagePerHour, fullDayHour, partTimeHour);
+            MonthlyWage monthlyWage = new MonthlyWage();
+            monthlyWage.CalculateMonthlyWage(workDayPerMonth, wagePerHour, fullDayHour, partTimeHour);
         }
     }
 }
