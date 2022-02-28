@@ -13,10 +13,8 @@ namespace EmployeeWageProblemOOPS
             int wagePerHour = 20;
             int fullDayHour = 8;
             int partTimeHour = 4;
-            int final = Convert.ToInt32(Check.checkPresentAbsent());
-            if (final != 0)
-            { final += Convert.ToInt32(CheckPartTime.PartTime()); }
-            SwitchCase.switchCase(final, wagePerHour, fullDayHour, partTimeHour);
+            int workDayPerMonth = 20;
+            MonthlyWage.CalculateMonthlyWage(workDayPerMonth, wagePerHour, fullDayHour, partTimeHour);
         }
     }
 }
