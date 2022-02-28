@@ -8,7 +8,7 @@ namespace EmployeeWageProblemOOPS
 {
     public class MonthlyWage
     {
-        public static void CalculateMonthlyWage(int workDayPerMonth, int wagePerHour, int fullDayHour, int partTimeHour)
+        public void CalculateMonthlyWage(int workDayPerMonth, int wagePerHour, int fullDayHour, int partTimeHour)
         {
             int Total_Amount = 0;
             int Total_Hour = 0;
